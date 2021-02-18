@@ -23,23 +23,21 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
   <script>
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', function () {
-        navigator.serviceWorker.register('/sw.js').then(function (registration) {
-          // Registration was successful
-          console.log('ServiceWorker registration successful with scope: ', registration.scope);
-        }, function (err) {
-          // registration failed :(
-          console.log('ServiceWorker registration failed: ', err);
-        });
-      });
-      window.addEventListener('fetch', function (event) {
-        // it can be empty if you just want to get rid of that error
-        console.log('ServiceWorker fetch action');
-
-      });
+    function registerServiceWorker() {
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js') //
+          .then(function (reg) {
+            console.log("service worker registered")
+          }).catch(function (err) {
+            console.log(err)
+          });
+      }
+      else {
+        console.log("Could not find serviceWorker in navigator")
+      }
     }
-    </script>
+    registerServiceWorker()
+  </script>
   <title>UltimaTV</title>
 </head>
 

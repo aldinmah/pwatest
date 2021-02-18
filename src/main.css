@@ -25,6 +25,17 @@ html, body{
     width: 100%;
     float: left;
 }
+.installBtn{
+    background-color: #2593d4;
+    color: #fff;
+    border-radius: 2px;
+    margin-left: 35px;
+    outline: 0;
+    border: 1px solid #1c78bf;
+    padding: 5px 12px;
+    position: relative;
+    top: -17px;
+}
 .logo{
     width: 200px
 }

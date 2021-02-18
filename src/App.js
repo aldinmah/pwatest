@@ -12,25 +12,23 @@ function App() {
   }
 
   const renderInstallButton = () => {
-    if (isInstallPromptSupported && isStandalone)
-
+    if (isInstallPromptSupported)
       return (
-        <button onClick={onClickInstall}>Install UltimaTV</button>
+        <button className="installBtn" onClick={onClickInstall}>Install UltimaTV</button>
       )
     return null
   }
   return (
     <div className="UltimaTVApp">
       <a href="/"><img className="logo" src="/assets/images/logo.png" alt="logo" /></a>
+      {renderInstallButton()}
       <div className="pwaInfo">
       <br></br>
       <span>PWA Info</span>
       <br></br>
       <br></br>
       <span>Is Install Prompt Supported = <strong>{isInstallPromptSupported ? 'true' : 'false'}</strong></span>
-      <br></br>
-      <span>Is Standalone = {isStandalone ? 'true' : 'false'}</span>
-      {renderInstallButton()}
+      
       </div>
       <span className="title">PWA Shaka player example</span>
       <UltimaTVPlayer />
