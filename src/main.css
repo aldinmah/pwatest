@@ -20,6 +20,12 @@ html, body{
 .UltimaTVApp .ultRadio{
    margin-right:25px
 }
+.pwaInfo{
+    color: #fff;
+    width: 100%;
+    height: 50px;
+    float: left;
+}
 .logo{
     width: 200px
 }
