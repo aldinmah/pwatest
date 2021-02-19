@@ -67,14 +67,16 @@
         <div class="row">
       <label for="stream">Select stream url:</label>
       <select name="stream" id="stream" onchange="changeStream()">
+        <option value="https://stream.mux.com/Wxle5yzErvilJ02C13zuv8OSeROvfwsjS.m3u8" selected>mux hls</option>
         <option value="https://172.104.156.57:4043/origin/cmaf/index.m3u8" selected>piko hls</option>
         <option value="https://172.104.156.57:4043/origin/cmaf/index.mpd">piko dash</option>
         <option value="https://storage.googleapis.com/shaka-demo-assets/bbb-dark-truths-hls/hls.m3u8">shaka demo hls</option>
         <option value="https://lydiaxox.scouttv.tv/FIDO_TV_OUT/index.m3u8">Scout Fido</option>
         <option value="https://marlenaxox.scouttv.tv/WVPT_PBS_OUT/index.m3u8">Scout PBS</option>
         <option value="https://marlenaxox.scouttv.tv/WTVRCBS_OUT/index.m3u8">Scout CBS</option>
+        
       </select>
-      <span class="w-100 text-left">Stream URL : <span id="selectedStream">https://172.104.156.57:4043/origin/cmaf/index.m3u8</span></span>
+      <span class="w-100 text-left">Stream URL : <span id="selectedStream">https://stream.mux.com/Wxle5yzErvilJ02C13zuv8OSeROvfwsjS.m3u8</span></span>
     </div>
       <div class="row">
           <video id="video" poster="assets/images/poster.png" controls autoplay></video>

@@ -1,5 +1,5 @@
 
-const manifestUri = 'https://172.104.156.57:4043/origin/cmaf/index.m3u8';
+const manifestUri = 'https://stream.mux.com/Wxle5yzErvilJ02C13zuv8OSeROvfwsjS.m3u8';
 
 var player, video = null;
 
