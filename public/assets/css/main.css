@@ -1,0 +1,39 @@
+html,
+body {
+  height: 100%;
+  background-color: #000;
+}
+
+body {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  color: #ccc;
+}
+video{
+    border: 1px solid #666;
+    width: 100%
+}
+.cover-container {
+  max-width: 80%;
+}
+.logBox{
+    max-height: 150px;
+    overflow: auto;
+    font-size: 10px
+}
+.error{
+    color: red
+}
+@media (min-width: 48em) {
+  .masthead-brand {
+    float: left;
+  }
+  .nav-masthead {
+    float: right;
+  }
+}
+
