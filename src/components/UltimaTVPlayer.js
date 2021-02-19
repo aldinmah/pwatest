@@ -9,8 +9,10 @@ function UltimaTVPlayer(props) {
     const [streams] = useState([
         { value: 0, label: 'pikotv_hls', url: 'https://172.104.156.57:4043/origin/cmaf/index.m3u8' },
         { value: 1, label: 'pikotv_dash', url: 'https://172.104.156.57:4043/origin/cmaf/index.mpd' },
-        { value: 2, label: 'shaka_demo_hls', url: 'https://storage.googleapis.com/shaka-demo-assets/bbb-dark-truths-hls/hls.m3u8' }
-        
+        { value: 2, label: 'shaka_demo_hls', url: 'https://storage.googleapis.com/shaka-demo-assets/bbb-dark-truths-hls/hls.m3u8' },
+        { value: 3, label: 'mux hls', url: 'https://stream.mux.com/Wxle5yzErvilJ02C13zuv8OSeROvfwsjS.m3u8' },
+        { value: 4, label: 'Scout Fido', url: 'https://lydiaxox.scouttv.tv/FIDO_TV_OUT/index.m3u8' },
+        { value: 5, label: 'Scout PBS', url: 'https://marlenaxox.scouttv.tv/WVPT_PBS_OUT/index.m3u8' }
     ]);
     const [selectedStreamIndex, setSelectedStreamIndex] = useState(0)
 
