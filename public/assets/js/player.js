@@ -21,7 +21,6 @@ async function initPlayer() {
   // Create a Player instance.
   video = document.getElementById('video');
   player = new shaka.Player(video);
-  shaka.log.setLevel(shaka.log.Level.DEBUG);
   // Attach player to the window to make it easy to access in the JS console.
   window.player = player;
 
