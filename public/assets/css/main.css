@@ -15,7 +15,8 @@ body {
 }
 video{
     border: 1px solid #666;
-    width: 100%
+    width: 100%;
+    max-height: 300px
 }
 .cover-container {
   max-width: 80%;
