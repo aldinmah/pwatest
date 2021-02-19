@@ -52,6 +52,39 @@ function UltimaTVPlayer(props) {
                     }} />
                     shaka_demo_hls
             </label>
+            <label className="ultRadio">
+                <input
+                    type="radio"
+                    name="stream_url"
+                    value={streams[3].value}
+                    checked={selectedStreamIndex === streams[3].value}
+                    onChange={(e) => {
+                        setSelectedStreamIndex(parseInt(e.currentTarget.value))
+                    }} />
+                    mux hls
+            </label>
+            <label className="ultRadio">
+                <input
+                    type="radio"
+                    name="stream_url"
+                    value={streams[4].value}
+                    checked={selectedStreamIndex === streams[4].value}
+                    onChange={(e) => {
+                        setSelectedStreamIndex(parseInt(e.currentTarget.value))
+                    }} />
+                    Scout Fido
+            </label>
+            <label className="ultRadio">
+                <input
+                    type="radio"
+                    name="stream_url"
+                    value={streams[5].value}
+                    checked={selectedStreamIndex === streams[5].value}
+                    onChange={(e) => {
+                        setSelectedStreamIndex(parseInt(e.currentTarget.value))
+                    }} />
+                    Scout PBS
+            </label>
             
             <ShakaPlayer autoPlay src={streams[selectedStreamIndex].url} />
         </div>
